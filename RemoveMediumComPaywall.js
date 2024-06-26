@@ -9,4 +9,6 @@
 // @grant        none
 // ==/UserScript==
 
-(function () { window.location = window.location.toString().replace(/https:\/\/[^.]+\.medium\.com/g, "https://freedium.cfd/"); })();
+(function () {
+    window.location.href = window.location.href.replace(/https:\/\/([^.]*\.)?medium\.com/g, "https://freedium.cfd/");
+})();
